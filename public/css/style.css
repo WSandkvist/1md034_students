@@ -1,0 +1,149 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Share+Tech+Mono");
+
+h1{
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;	
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+p{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+li{
+    display: list-item;
+}
+
+body{
+    font-family: Arial;
+    font-size: 1.1em;
+}
+
+button{
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    margin-left: 1.2em;
+}
+
+button:hover{
+    background: #0000ff;
+    cursor: pointer;
+}
+
+table{
+    width: 85%;
+}
+
+td{
+    text-align: center;
+}
+
+section{
+    margin: 1em;
+    padding: 1em;
+}
+
+header.welcome{
+    margin: 1em;
+    height: 13em;
+    overflow: hidden;
+}
+
+span.allergy{
+    font-weight: bold;
+}
+
+section#menu{
+    color: #ffffff;
+    background: #000000;
+    border: dashed;
+}
+
+section#contact{
+    color: #000000;
+    background: #ffffff;
+    border:dashed;
+}
+
+h1#headline{
+    position: absolute;
+    padding: 2em 1em;
+}
+img#headpic{
+    opacity: 0.69;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    display: grid;
+}
+
+.box{
+    background-color: #000000;
+}
+
+.fb{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.dfb{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bkf{
+    grid-column: 3;
+    grid-row:1;
+}
+
+/*a, strong, em {
+    color: #0099ff;
+}
+
+p.info,
+#login p {
+    width: 80%;
+    margin: 1vw auto;
+}
+*/

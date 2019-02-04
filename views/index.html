@@ -1,10 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>DELI-VERY</title>
+        <title>Burgers - We be hot</title>
+        <meta charset="utf-8"/>
+        
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
+    
+    
     <body>
-        <h1>Hello World!!!</h1>
-        <a href="/map" target="_blank">Open map in new window</a>.
+        <main>
+            <header class="welcome">
+                <h1 id="headline">Welcome to Burgers!</h1>
+                <img id="headpic" src="https://coverfiles.alphacoders.com/372/37255.jpg">
+            </header>
+            
+            <section id="menu">
+                <h2>Menu</h2>
+                <p>This is our menu of selectable burgers.</p>
+                
+                <div class="wrapper">
+                    <div class="box fb">
+                        <h3>The Fire Burger</h3>
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4409422.jpg" alt="A burger with fire in the background" title="The Fire Burger" width="200" height="150">
+                        <ul>
+                            <li>Fire</li>
+                            <li><span class="allergy">Gluten</span></li>
+                            <li><span class="allergy">Lactose</span></li>
+                            <li>All the meats</li>
+                            <li>All the vegetables</li>
+                        </ul>
+                    </div>
+                    <div class="box dfb">
+                        <h3>The Double Fire Burger</h3>
+                        <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4409422.jpg" alt="A burger with fire in the background" title="The Fire Burger" width="200" height="150">
+                        <ul>
+                            <li>Double the Fire</li>
+                            <li>Double the <span class="allergy">Gluten</span></li>
+                            <li>Double the <span class="allergy">Lactose</span></li>
+                            <li>Double the meats</li>
+                            <li>Double the vegetables</li>
+                        </ul>                    
+                    </div>
+                    <div class="box bkf">
+                    <h3>The Burger King Fire</h3>
+                        <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2017/02/burger-king-fire-hed-2017.jpg" alt="A Burger King on fire" title="The Burger King Fire" width="200" height="150">
+                        <ul>
+                            <li>Fire</li>
+                            <li><span class="allergy">Building</span> (contents might vary)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <h3>The Fire Burger</h3>
+                                <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4409422.jpg" alt="A burger with fire in the background" title="The Fire Burger" width="200" height="150"> 
+                            </th>
+                            
+                            <th>
+                                <h3>The Double Fire Burger</h3>
+                                <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4409427.jpg" alt="A second burger with fire in the background" title="The Double Fire Burger" width="200" height="150"> 
+                            </th>
+                            
+                            <th>
+                                <h3>The Burger King Fire</h3>
+                                <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2017/02/burger-king-fire-hed-2017.jpg" alt="A Burger King on fire" title="The Burger King Fire" width="200" height="150"> 
+                            </th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Allergy information:</td>
+                            <td>Allergy information:</td>
+                            <td>Allergy information:</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Fire</li>
+                                    <li><span class="allergy">Gluten</span></li>
+                                    <li><span class="allergy">Lactose</span></li>
+                                    <li>All the meats</li>
+                                    <li>All the vegetables</li>
+                                </ul>
+                            </td>
+
+                            <td>
+                                <ul>
+                                    <li>Double the Fire</li>
+                                    <li>Double the <span class="allergy">Gluten</span></li>
+                                    <li>Double the <span class="allergy">Lactose</span></li>
+                                    <li>Double the meats</li>
+                                    <li>Double the vegetables</li>
+                                </ul>
+                            </td>
+                        
+                            <td>
+                                <ul>
+                                    <li>Fire</li>
+                                    <li><span class="allergy">Building</span> (contents might vary)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </section>
+            
+            <section id="contact">
+                <h2>Customer Information</h2>
+                <p>This is where you provide neccessary customer information.</p>
+                <h3>Delivery Informaiton</h3>
+                
+                <form>
+                    <p>
+                        <label for="fullname">First- and last name</label><br>
+                        <input type="text" id="fullname" name="fn" required="required" placeholder="Ex. Dave Smith">
+                    </p>
+                    <p>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="em" required="required" placeholder="Ex. abc123@email.com">
+                    </p>
+                    <p>
+                        <label for="streetname">Street</label><br>
+                        <input type="text" id="streetname" name="sn" required="required" placeholder="Ex. East Main Street">
+                    </p>
+                    <p>
+                        <label for="housenumber">House</label><br>
+                        <input type="number" id="housenumber" name="hn" required="required" placeholder="Ex. 123">
+                    </p>
+                    <p>
+                        <label for="payment">Recipient</label><br>
+                        <select id="payment" name="pmnt">
+                            <option>Credit card</option>
+                            <option>Cash</option>
+                            <option>Bank transfer</option>
+                            <option>Mobile payment</option>
+                        </select>
+                    </p>
+                    <p>
+                        Gender<br>
+                        <input type="radio" id="female" name="gndr"><label for="female">Female</label><br>
+                        <input type="radio" id="male" name="gndr"><label for="male">Male</label><br>
+                        <input type="radio" id="nonbinary" name="gndr"><label for="male">Non-binary</label><br>
+                        <input type="radio" id="other" name="gndr" checked="checked"><label for="other">Other/undisclosed</label><br>
+                    </p>                        
+                </form>
+            </section>
+            
+            <button type="submit"><img src="http://www.myiconfinder.com/uploads/iconsets/256-256-8a98392e8674eb71887ee57b861dd1c0-Burger.png" width="15" height="15">Place order</button>
+        </main>
+        
+        <footer>
+            <p>Copyright 2019 Burgers Inc.</p>
+        </footer>
     </body>
 </html>
